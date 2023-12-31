@@ -1,0 +1,37 @@
+# Flask:
+-> Python web development framework
+-> A minimal Flask application looks something like this:
+
+    from flask import Flask
+    app = Flask(__name__)
+
+    @app.route('/')
+    def hello_world():
+        return 'Hello, World!'
+
+-> To run the application, use the flask command or python -m flask. Before you can do that you need to tell your
+    terminal the application to work with by exporting the FLASK_APP environment variable:
+    > set FLASK_APP=hello
+    > flask run
+     * Running on http://127.0.0.1:5000/
+
+* if the file is named app.py or wsgi.py, you don’t have to set the FLASK_APP environment variable.
+
+-> Add following code to run the flask app without using terminal:
+    if __name__ == "__main__":
+        app.run()
+
+# Command line:
+-> also known as "Shell"
+-> interacts with the kernel
+-> why use:
+    - greater control
+-> Common commands:
+    >pwd - print working directory
+    >ls - list all the files and folders in the current directory
+    >cd - change directory
+    >mkdir folder_name - make new folder/directory eg: mkdir test
+    >touch file_name - create a new file eg: touch main.py
+    >rm file_name - remove the file
+    >cd .. - navigate one step up to the parent folder
+    >rm -rf folder_name - forcibly remove the folder
